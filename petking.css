@@ -1,1 +1,153 @@
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     
+    :root{
+      --primary-color: rgb(244, 241, 222);
+      --secondary-color: rgb(34, 112, 110);
+      --text-dark: rgb(61, 64, 91);
+      --text-light: rgb(224, 122, 95):
+      --white: rgb(251, 250, 245);
+      
+      --max-width: 1200px;
+      
+      /* h1: Fluidly scales from 32px (mobile) to 48px (desktop) */
+      --font-size-h1: clamp(2rem, 1.45rem + 2.72vw, 3rem);
+      
+      /* h2: Fluidly scales from 24px (mobile) to 36px (desktop) */
+      --font-size-h2: clamp(1.5rem, 1.09rem + 2.05vw, 2.25rem);
+      
+      /* h3: Fluidly scales from 20px (mobile) to 28px (desktop) */
+      --font-size-h3: clamp(1.25rem, 0.98rem + 1.36vw, 1.75rem);
+      
+      /* h4: Fluidly scales from 18px (mobile) to 22px (desktop) */
+      --font-size-h4: clamp(1.125rem, 0.99rem + 0.68vw, 1.375rem);
+      
+      /* Body: Fluidly scales from 16px (mobile) to 18px (desktop) */
+      --font-size-body: clamp(1rem, 0.91rem + 0.45vw, 1.125rem);
+
+    }
+
+/*Basic Style for the headers, body, html and more*/
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3, h4 {
+  color: var(--color-primary); /* Deep Spruce */
+  font-family: 'YourBrandFont', system-ui, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  }
+
+  h1 { font-size: var(--font-size-h1); letter-spacing: -0.02em; }
+  h2 { font-size: var(--font-size-h2); letter-spacing: -0.01em; }
+  h3 { font-size: var(--font-size-h3); }
+  h4 { font-size: var(--font-size-h4); }
+  
+  p {
+    font-size: var(--font-size-body);
+    color: var(--color-text); /* Slate Charcoal */
+    line-height: 1.6;
+  }
+  
+  img{
+    display: flex;
+    width: 100%;
+  }
+  
+  a{
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  html, body{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    font-family: "Poppins", sans-serif;
+  }
+
+/*Section COntrol*/  
+  .section-container{
+    max-width: var(--max-width);
+    padding: 5em, 1em;
+    margin: auto;
+  }
+  
+  .section-subheader{
+    font-size: var(--font-size-h4);
+    font-weight: 500;
+    color: var(--text-light);
+    text-align: center;
+  }
+  
+  .section-header{
+    font-size: var(--font-size-h1);
+    font-weight: 500;
+    color: var(--text-dark);
+    text-align: center;
+    line-height: 3.5em;
+  }
+  
+  /*Navigation*/
+  nav{
+    position: fixed;
+    isolation: isolate;
+    width: 100%;
+    z-index: 9;
+  }
+  
+  .nav-header{
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+  }
+  
+  .nav-logo a{
+    font-size: var(font-size-h2);
+    font-weight: 700;
+    color: var(--secondary-color);
+  }
+  
+  .nav-menu-btn{
+    font-size: var(--font-size-h3);
+    color: var(--text-dark);
+    cursor: pointer;
+  }
+  
+  .nav-links{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    background-color: var(--white);
+    transition: transform 0.5s;
+    z-index: -1;
+  }
+  
+  .nav-links a{
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+  
+  .nav-links a:hover{
+    color: var(--secondary-color);
+  }
+  
+  
