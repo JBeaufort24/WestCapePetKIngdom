@@ -647,4 +647,123 @@
     text-align: center;
   }
   
+  @media (width > 540px){
+    .header-content h1{
+      font-size: 4.5em;
+      line-height: 5em;
+    }
+    
+    .header-content h1 span{
+      font-size: 6em;
+    }
+    
+    .intro-grid{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .product-grid{
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .instagram-grid{
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .footer-container{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
   
+  @media (width > 768px){
+    nav{
+      position: static;
+      padding: 2em 1em;
+      max-width: var(--max-width);
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2em;
+    }
+    
+    .nav-header{
+      padding: 0;
+      background-color: transparent;
+    }
+    
+    .nav-logo a{
+      font-size: 1.5em;
+    }
+    
+    .nav-menu-btn{
+      display: none;
+    }
+    
+    .nav-links{
+      position: static;
+      padding: 0;
+      flex-direction: row;
+      justify-content: flex-end;
+      background-color: transparent;
+      transform: none;
+    }
+    
+    header{
+      padding-top: 0;
+    }
+    
+    .header-container{
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+    
+    .header-content{
+      grid-area: 1/2/2/3;
+    }
+    
+    .header-content :is(h4, .header-btn button){
+      margin-inline-start: unset;
+    }
+    
+    .header-content :is(h1, h2){
+      text-align: left;
+    }
+    
+    .header-content p{
+      max-width: 400px;
+      text-align: left;
+    }
+    
+    .header-image img{
+      max-width: 500px;
+    }
+    
+    .intro-grid{
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .about-row{
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .about-row:nth-child(4){
+      flex-direction: row-reverse;
+    }
+    
+    .about-image{
+      max-width: unset;
+    }
+    
+    .about-content{
+      text-align: left;
+    }
+    
+    .product-grid{
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-container{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
