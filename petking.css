@@ -426,7 +426,7 @@ img.header-image-bg {
   top: 0;
   left: 0;
   width: 100%;
-  height: 65%;
+  height: 100%;
   background-color: #fdf2d9;
   z-index: -1;
 }
