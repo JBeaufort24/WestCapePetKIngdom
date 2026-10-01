@@ -646,11 +646,15 @@ img.header-image-bg {
   border-radius: 100%;
 }
 
-.footer-bar {
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: var(--text-dark);
+.footer-bottom{
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
+  font-size: 0.85rem;
+}
+
+.footer-bottom a{
+  color: var(--secondary-color);
 }
 
 @media (width > 540px) {
@@ -773,4 +777,5 @@ img.header-image-bg {
   .footer-container {
     grid-template-columns: repeat(4, 1fr);
   }
+}
 }
